@@ -2,7 +2,7 @@ using UnityEngine;
 using DG.Tweening;
 
 [System.Serializable]
-public class PanelAnimator
+public class PanelAnimator: MonoBehaviour
 {
     public CanvasGroup canvasGroup;
     public RectTransform rect;

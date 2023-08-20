@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5.0f;
     private Rigidbody2D rb;
     private Vector2 movement;
+    [SerializeField] private Animator anim;
 
     private void Start()
     {
@@ -16,6 +17,17 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+        
+        anim.SetFloat("Speed", movement.sqrMagnitude);
+        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetBool("IsHitting", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.Space))
+        {
+            anim.SetBool("IsHitting", false);
+        }
     }
 
     private void FixedUpdate()

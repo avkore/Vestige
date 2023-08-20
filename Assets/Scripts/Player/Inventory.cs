@@ -5,7 +5,7 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory Instance;
     public CanvasGroup inventoryUI;
-    private List<Item> inventory = new List<Item>();
+    // private List<Item> inventory = new List<Item>();
     public bool IsOpen => inventoryUI.interactable;
     public PanelAnimator uimanager = new();
     
@@ -14,15 +14,15 @@ public class Inventory : MonoBehaviour
         Instance = this;
     }
     
-    public void AddItem(Item item)
-    {
-        inventory.Add(item);
-    }
-    
-    public void RemoveItem(Item item)
-    {
-        inventory.Remove(item);
-    }
+    // public void AddItem(Item item)
+    // {
+    //     inventory.Add(item);
+    // }
+    //
+    // public void RemoveItem(Item item)
+    // {
+    //     inventory.Remove(item);
+    // }
     
     public void OpenInventory(bool boolean)
     {
@@ -33,7 +33,4 @@ public class Inventory : MonoBehaviour
         inventoryUI.interactable = boolean;
         inventoryUI.blocksRaycasts = boolean;
     }
-    
-    
-    
 }

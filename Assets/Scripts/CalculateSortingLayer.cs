@@ -1,11 +1,12 @@
 using UnityEngine;
 
 public class CalculateSortingLayer : MonoBehaviour
-{ public string playerTag = "Player";
-
+{ 
+    public string playerTag = "Player";
     private GameObject playerObject;
     private Renderer rendererComponent;
     private string originalSortingLayer;
+    public float offset;
 
     private void Start()
     {
@@ -28,7 +29,7 @@ public class CalculateSortingLayer : MonoBehaviour
 
     private bool ShouldMoveToFrontOfPlayer()
     {
-        return playerObject.transform.position.y > transform.position.y - 0.5f;
+        return playerObject.transform.position.y > transform.position.y - offset;
     }
 
     private void SetSortingLayer(string layerName)

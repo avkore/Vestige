@@ -670,6 +670,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClick: {fileID: 8300000, guid: 18ecf40c46eb13c449d2b19ff4f9150c, type: 3}
+  coin: {fileID: 0}
+  chest: {fileID: 0}
   background: {fileID: 248271330}
   effects: {fileID: 248271329}
 --- !u!82 &248271329
@@ -1636,24 +1638,24 @@ MonoBehaviour:
   playBtn: {fileID: 1718743827}
   settingsBtn: {fileID: 624337394}
   exitBtn: {fileID: 1308355902}
+  musicOnOff: {fileID: 1011664416}
+  soundOnOff: {fileID: 50114313}
   settingsClose: {fileID: 2135510886}
-  uiManagerSettings:
-    canvasGroup: {fileID: 147152350}
-    rect: {fileID: 147152349}
-    fadeTime: 0.4
-    posY: 850
-    posX: 150
-  uiManagerMenu:
-    canvasGroup: {fileID: 1726460982}
-    rect: {fileID: 507087948}
-    fadeTime: 0.4
-    posY: 850
-    posX: -150
   toggles:
   - {fileID: 21300000, guid: 5ed7bf021468af84f9ee411df252a51e, type: 3}
   - {fileID: 21300000, guid: f9e3129d62f5195459e2705e5d8384de, type: 3}
-  musicOnOff: {fileID: 1011664416}
-  soundOnOff: {fileID: 50114313}
+  uiManagerSettings:
+    canvasGroup: {fileID: 147152350}
+    rect: {fileID: 147152349}
+    fadeTime: 0.5
+    posY: -1000
+    posX: -100
+  uiManagerMenu:
+    canvasGroup: {fileID: 1726460982}
+    rect: {fileID: 1726460981}
+    fadeTime: 0.5
+    posY: -1000
+    posX: -100
 --- !u!1 &1076301117
 GameObject:
   m_ObjectHideFlags: 0

@@ -73,5 +73,4 @@ public class MenuManager : MonoBehaviour
                 AudioManager.Instance.TurnOffSounds(true);
         }
     }
-
 }

@@ -4,8 +4,8 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
     public AudioClip buttonClick;
-    // public AudioClip coin;
-    // public AudioClip chest;
+    public AudioClip coin;
+    public AudioClip chest;
     public AudioSource background;
     public AudioSource effects;
 
@@ -16,9 +16,17 @@ public class AudioManager : MonoBehaviour
     
     public void PlayAudio(SelectAudio selectAudio)
     {
-        if (selectAudio.audioClip == Audio.ButtonClick)
+        switch (selectAudio.audioClip)
         {
-            effects.PlayOneShot(buttonClick);
+            case Audio.ButtonClick:
+                effects.PlayOneShot(buttonClick);
+                break;
+            case Audio.Chest:
+                effects.PlayOneShot(chest);
+                break;
+            case Audio.Coins:
+                effects.PlayOneShot(coin);
+                break;
         }
     }
 

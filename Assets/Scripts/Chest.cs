@@ -13,6 +13,7 @@ public class Chest : MonoBehaviour
     {
         if (other.CompareTag("Weapon"))
         {
+            AudioManager.Instance.PlayAudio(AudioManager.Instance.chest);
             int randomValue = Random.Range(0, 10);
 
             if (randomValue <= 6)

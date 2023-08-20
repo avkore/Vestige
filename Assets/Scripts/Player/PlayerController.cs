@@ -33,10 +33,6 @@ public class PlayerController : MonoBehaviour
         {
             Inventory.Instance.OpenInventory(true);
         }
-        else if (Input.GetKeyUp(KeyCode.I))
-        {
-            Inventory.Instance.OpenInventory(false);
-        }
     }
 
     private void FixedUpdate()

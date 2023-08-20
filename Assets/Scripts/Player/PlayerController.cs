@@ -28,6 +28,15 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("IsHitting", false);
         }
+        
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Inventory.Instance.OpenInventory(true);
+        }
+        else if (Input.GetKeyUp(KeyCode.I))
+        {
+            Inventory.Instance.OpenInventory(false);
+        }
     }
 
     private void FixedUpdate()

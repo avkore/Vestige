@@ -139,7 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f51e2df00199354eb748641ff89239d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsPrefab: {fileID: 5090426049311700927, guid: f1804d976123baf47a842e6ed880cbc1, type: 3}
-  artifactPrefab: {fileID: 1672074671119704710, guid: a410afb4743021f4691a7a2b9b60814f, type: 3}
+  coinsPrefab: {fileID: 6645627913152059479, guid: b70b9378e784fbf4dbe7f1ceb5ec4c4c, type: 3}
+  artifactPrefabs:
+  - {fileID: 1672074671119704710, guid: a410afb4743021f4691a7a2b9b60814f, type: 3}
+  - {fileID: 5090426049311700927, guid: f1804d976123baf47a842e6ed880cbc1, type: 3}
   coinCount: 10
   artifactCount: 1

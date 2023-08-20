@@ -17,5 +17,6 @@ public enum Audio
 {
     ButtonClick,
     Chest,
-    Coins
+    Coins,
+    Artifact
 }

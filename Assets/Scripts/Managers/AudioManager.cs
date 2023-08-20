@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip buttonClick;
     public AudioClip coin;
     public AudioClip chest;
+    public AudioClip artifact;
     public AudioSource background;
     public AudioSource effects;
 
@@ -26,6 +27,9 @@ public class AudioManager : MonoBehaviour
                 break;
             case Audio.Coins:
                 effects.PlayOneShot(coin);
+                break;
+            case Audio.Artifact:
+                effects.PlayOneShot(artifact);
                 break;
         }
     }

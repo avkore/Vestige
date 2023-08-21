@@ -37,8 +37,9 @@ using UnityEngine.UI;
             }
             else if(itemState == ItemState.InInventory)
             {
-                if(merchant.shop.IsOpen)
+                if(merchant.shop.IsOpen && merchant.shop.IsOpen != null)
                 {
+                    Debug.Log("not null");
                     merchant.shop.AddItem(this, ItemState.InShop);
                     merchant.playerInventory.RemoveItem(this);
                     merchant.playerInventory.AddMoney(price);

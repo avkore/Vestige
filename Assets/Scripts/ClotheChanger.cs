@@ -69,6 +69,5 @@ public static class Labels
     public static string GreenTorso = "GreenTorso";
     public static string GreyHat = "GreyHat";
     public static string GreyTorso = "GreyTorso";
-    public static string RedHat = "RedHat";
     public static string RedTorso = "RedTorso";
 }

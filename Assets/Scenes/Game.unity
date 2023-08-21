@@ -90431,9 +90431,17 @@ PrefabInstance:
       value: 255950077
       objectReference: {fileID: 0}
     - target: {fileID: 212000010222169336, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
+      propertyPath: m_Size.x
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010222169336, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
+      propertyPath: m_Size.y
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010222169336, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 215dd6c48c732d744aecd29e7fecbbfa, type: 3}
+      objectReference: {fileID: 21300000, guid: 250530d3e9754ed418009e3d539275b3, type: 3}
     - target: {fileID: 212000010222169336, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -90441,6 +90449,10 @@ PrefabInstance:
     - target: {fileID: 212000010222169336, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
       propertyPath: m_SortingLayerID
       value: 255950077
+      objectReference: {fileID: 0}
+    - target: {fileID: 212000010222169336, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 212000010938263010, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
       propertyPath: m_SortingLayer
@@ -90517,7 +90529,7 @@ PrefabInstance:
     - target: {fileID: 212000013352628812, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 468244f274f38f64b85773c7888444b6, type: 3}
+      objectReference: {fileID: 21300000, guid: ae2d3e3bacfacde4981510b116293dba, type: 3}
     - target: {fileID: 212000013352628812, guid: 722924ec8a0056f4a8fb443b2fb65ff9, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -92253,7 +92265,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CategoryHash: 0
   m_labelHash: 0
-  m_SpriteKey: -2.7217065e-18
+  m_SpriteKey: -1.6173375e+17
+--- !u!114 &455597399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455597394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RootBone: {fileID: 1481613062}
+  m_BoneTransforms: []
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_UseBatching: 1
+  m_AlwaysUpdate: 1
+  m_AutoRebind: 0
 --- !u!1001 &463906422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98591,14 +98623,14 @@ MonoBehaviour:
   shopUI: {fileID: 1345221684}
   itemPrefab: {fileID: 4780746675124788804, guid: 9f8f18e82be46c343b7569e9a89667f3, type: 3}
   ShopScriptableItem:
-  - {fileID: 11400000, guid: 09dd0f19473192b488d7627850c7b4e8, type: 2}
+  - {fileID: 11400000, guid: 592779edab358bb4890a609c2e6bd2e0, type: 2}
+  - {fileID: 11400000, guid: 482f1f5a3bf4f124d819beffdbae9597, type: 2}
   - {fileID: 11400000, guid: 4a9bffbae0b65fc4193b7af97d7830b3, type: 2}
   - {fileID: 11400000, guid: 1be3a7c86fc512e4a95b3b98b10e36a5, type: 2}
-  - {fileID: 11400000, guid: 592779edab358bb4890a609c2e6bd2e0, type: 2}
   - {fileID: 11400000, guid: 9e13be77bc9970e429c713ae20cd38e1, type: 2}
+  - {fileID: 11400000, guid: e69a5f80844d2de41985daeab861db09, type: 2}
   - {fileID: 11400000, guid: 79cc345999cb92c498c29718111ed601, type: 2}
   - {fileID: 11400000, guid: bb79290a7d91d05489173f0b18f20490, type: 2}
-  - {fileID: 11400000, guid: b6f4cbd795852fc4cae6c00bdb0cac54, type: 2}
   merchant: {fileID: 435310796}
   close: {fileID: 1527067624}
   uiManager:
@@ -99666,9 +99698,7 @@ MonoBehaviour:
   Items: []
   itemsContainer: {fileID: 1755306529}
   itemPrefab: {fileID: 4780746675124788804, guid: 9f8f18e82be46c343b7569e9a89667f3, type: 3}
-  equippedScriptableItems:
-  - {fileID: 11400000, guid: 482f1f5a3bf4f124d819beffdbae9597, type: 2}
-  - {fileID: 11400000, guid: e69a5f80844d2de41985daeab861db09, type: 2}
+  equippedScriptableItems: []
 --- !u!114 &1481613069
 MonoBehaviour:
   m_ObjectHideFlags: 0

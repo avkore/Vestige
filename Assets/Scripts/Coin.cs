@@ -12,11 +12,12 @@ public class Coin : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Player player = collision.gameObject.GetComponent<Player>();
+            PlayerInventory playerInventory = collision.gameObject.GetComponent<PlayerInventory>();
             
-            if (player != null)
+            if (playerInventory != null)
             {
-                player.AddCoins(coinValue);
+                playerInventory.money += 1;
+                playerInventory.inventory.UpdateMoney(playerInventory.money);
                 AudioManager.Instance.PlayAudio(AudioManager.Instance.coin);
                 coinText.gameObject.SetActive(true);
             }

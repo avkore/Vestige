@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,8 @@ public class Inventory : MonoBehaviour
     public PanelAnimator uiManager = new();
     public Button inventory;
     public Button closeSettings;
+    
+    public TMP_Text moneyTxt;
 
     private void Awake()
     {
@@ -23,5 +26,10 @@ public class Inventory : MonoBehaviour
             uiManager.FadeInPanel();
         else
             uiManager.FadeOutPanel();
+    }
+    
+    public void UpdateMoney(int money)
+    {
+        moneyTxt.text = money.ToString();
     }
 }
